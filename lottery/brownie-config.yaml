@@ -1,0 +1,14 @@
+dependencies:
+  # - <org/repo>@<version>
+  - smartcontractkit/chainlink-brownie-contracts@0.6.1
+  - OpenZeppelin/openzeppelin-contracts@4.8.1
+compiler:
+  solc:
+    remappings:
+      - '@chainlink=smartcontractkit/chainlink-brownie-contracts@0.6.1'
+      - '@OpenZeppelin=OpenZeppelin/openzeppelin-contracts@4.8.1'
+
+networks:
+  default: 'ganache-local'
+  ganache-local:
+    eth_to_usd_address: '0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419'

@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.4.23+commit.124ca40d"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "attackEtherStore",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "etherStore",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "collectEther",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "_etherStoreAddress",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "fallback"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"brownie/vuln_test/contracts/Attacker.sol": "Attacker"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"brownie/vuln_test/contracts/Attacker.sol": {
+			"keccak256": "0xfc66b2519e9d464d63f49ca2f5a60fe925ecfb6321397d147dd4815cd4c17559",
+			"urls": [
+				"bzzr://1bd205270b2c9134747de79528e72a37b31d386ec0a5b273532aba35b23f5241"
+			]
+		},
+		"brownie/vuln_test/contracts/EtherStore.sol": {
+			"keccak256": "0x27973d2e7aa3f0a9704eb8824ca03ab03773bc6af2d5e5e6ecddf7840187712f",
+			"urls": [
+				"bzzr://c8bd1aede6a4f5761256762ca32fd0de30ad4c33c9b6b5d8eddda01d413e6c16"
+			]
+		}
+	},
+	"version": 1
+}

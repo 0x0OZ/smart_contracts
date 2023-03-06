@@ -1,0 +1,14 @@
+autofetch_sources: true
+dependencies:
+  - smartcontractkit/chainlink-brownie-contracts@0.6.1
+  - OpenZeppelin/openzeppelin-contracts@4.3.2
+compiler:
+  solc:
+    remappings:
+      - "@chainlink=smartcontractkit/chainlink-brownie-contracts@0.6.1"
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.3.2"
+networks:
+  default: 'ganache-local'
+dotenv: .env
+wallets:
+  from: ${PRIVATE_KEY}
